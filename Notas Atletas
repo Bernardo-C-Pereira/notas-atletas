@@ -18,7 +18,7 @@ let atletas = [
 ];
 
 for (let i = 0; i < atletas.length; i++) {
-  
+
 let notas = atletas[i].notas.slice();
 let maior = Math.max(...notas);
 let menor = Math.min(...notas);
@@ -27,7 +27,13 @@ notas.splice(notas.indexOf(maior), 1);
 notas.splice(notas.indexOf(menor), 1);
 
 atletas[i].notas = notas;
+let soma = 0;
 
+notas.forEach(function(nota){
+soma = soma + nota
+let media = soma / notas.length
+atletas[i].media = media.toFixed(2)
+})
 
 
 }
