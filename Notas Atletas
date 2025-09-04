@@ -17,4 +17,10 @@ let atletas = [
  }
 ];
 
+for (let i = 0; i < atletas.length; i++) {
+
+
+
+}
+
 console.log (atletas)
